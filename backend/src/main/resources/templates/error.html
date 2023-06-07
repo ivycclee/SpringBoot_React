@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{error}"></title>
+    <th:block th:insert="fragments.html :: includes"></th:block>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif; color: #464655;">
+<header th:replace="fragments.html :: header" />
+
+<div class="container">
+    <p class="text-center"><a th:href="@{/}"><button class="btn btn-outline-info" th:text="#{home}"></button></a></p>
+
+    <h1 th:text="#{error_occurred}" class="text-center"></h1>
+    <p class="text-center" th:text="${status} == 405 ?#{method_not_allowed} : ''" ></p>
+
+    <p class="text-center" th:text="${status} == 500 ? #{does_not_exist} : ''" ></p>
+
+</div>
+
+</body>
+</html>

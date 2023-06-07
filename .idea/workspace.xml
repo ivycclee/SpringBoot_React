@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3706ed23-5613-4a5e-91f5-719445e106ad" name="Changes" comment="React proj initialisation">
+      <change beforePath="$PROJECT_DIR$/.github/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/application/AssignmentTwoStarterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/OrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/OrderStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/Orders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/model/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/repository/OrderItemRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/service/HelperFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/service/OrderItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/assignmenttwo_starter/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/large/IMG_25636.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/large/IMG_25637.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/large/IMG_25638.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/large/IMG_25639.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/large/no-image.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/thumbs/IMG_25636.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/thumbs/IMG_25637.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/thumbs/IMG_25638.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/thumbs/IMG_25639.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/thumbs/no-image.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/assignmenttwo_starter/AssignmentTwoStarterApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2QsFFNngizoFNcqc5dPJOFW4xvw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivych/Desktop/PersonalProjects/spring_react&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2724138&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b6067049d3f2b5d18ed2efe345856bba&quot;
+  }
+}</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Assignment_One_Starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.application.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3706ed23-5613-4a5e-91f5-719445e106ad" name="Changes" comment="" />
+      <created>1686134284267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686134284267</updated>
+      <workItem from="1686134287683" duration="1510000" />
+      <workItem from="1686135848902" duration="128000" />
+      <workItem from="1686136209339" duration="550000" />
+      <workItem from="1686136789744" duration="824000" />
+      <workItem from="1686137722847" duration="1284000" />
+      <workItem from="1686139033754" duration="93000" />
+      <workItem from="1686139139805" duration="1238000" />
+    </task>
+    <task id="LOCAL-00001" summary="React proj initialisation">
+      <created>1686137092073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686137092073</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/SpringBackend_ReactFrontend" />
+    </ignored-roots>
+    <MESSAGE value="React proj initialisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="React proj initialisation" />
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{results}"></title>
+    <th:block th:insert="fragments.html :: includes"></th:block>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif; color: #464655;">
+<header th:replace="fragments.html :: header" />
+<div class="container">
+    <p style="text-align: center"><button class="btn btn-outline-info" onclick="history.back()" th:text="#{goback}"></button></p>
+
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <th th:text="#{artist}"></th>
+            <th th:text="#{artistCountry}"></th>
+            <th th:text="#{dateOfFinal}"></th>
+            <th th:text="#{hostCity}"></th>
+            <th th:text="#{hostCountry}"></th>
+            <th th:text="#{section}"></th>
+            <th th:text="#{qualified}"></th>
+            <th th:text="#{rank}"></th>
+            <th th:text="#{song}"></th>
+            <th th:text="#{totalPoints}"></th>
+            <th></th>
+            <th></th>
+            </thead>
+
+            <tr th:each="e: ${entrants}">
+                <td th:text="${e.artist}"></td>
+                <td th:text="${e.artistCountry}"></td>
+                <td th:text="${e.dateOfFinal}"></td>
+                <td th:text="${e.hostCity}"></td>
+                <td th:text="${e.hostCountry}"></td>
+                <td th:text="${e.section}"></td>
+                <td th:text="${e.qualified}"></td>
+                <td th:text="${e.rank}"></td>
+                <td th:text="${e.song}"></td>
+                <td th:text="${e.totalPoints}"></td>
+                <td><a th:href="@{/drilldown/{id}(id=${e.id})}" th:text="#{viewmore}"/></td>
+                <td><a th:href="@{/edit/{id}(id=${e.id})}" th:text="#{edit}"/></td>
+            </tr>
+        </table>
+
+        <p class="text-center" th:text="${no_results} != null ? #{no_results} : ''" ></p>
+
+    </div>
+</div>
+</body>
+</html>

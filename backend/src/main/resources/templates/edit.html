@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{edit}"></title>
+    <th:block th:insert="fragments.html :: includes"></th:block>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif; color: #464655;">
+<header th:replace="fragments.html :: header" />
+
+<div class="container">
+    <p style="text-align: center"><button class="btn btn-outline-info" onclick="history.back()" th:text="#{goback}"></button></p>
+    <div class="table-responsive">
+        <form th:action="@{/update}" method="post" th:object="${editentrant}" class="w-75 d-block mx-auto">
+            <table class="mx-auto">
+                <tr>
+                    <th th:text="#{entrantID}" scope="row"></th>
+                    <td><input type="text" readonly th:field="*{id}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('id')}" th:errors="*{id}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{venueID}" scope="row"></th>
+                    <td><input type="text" readonly th:field="*{venueID}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('venueID')}" th:errors="*{venueID}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{logo}" scope="row"></th>
+                    <td><input type="text" readonly th:field="*{logo}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('logo')}" th:errors="*{logo}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{hostCity}" scope="row"></th>
+                    <td><input type="text" name="hostcity" th:field="*{hostCity}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('hostCity')}" th:errors="*{hostCity}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{dateOfFinal}" scope="row"></th>
+                    <td><input type="date" name="dateoffinal" th:field="*{dateOfFinal}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('dateOfFinal')}" th:errors="*{dateOfFinal}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{hostCountry}" scope="row"></th>
+                    <td><input type="text" name="hostcountry" th:field="*{hostCountry}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('hostCountry')}" th:errors="*{hostCountry}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{section}" scope="row"></th>
+                    <td><select name="section" th:field="*{section}" class="form-control">
+                        <option th:each="s: ${allsections}" th:text="${s}" th:value="${s}" th:if="${section}==${s} ? selected : '' "></option>
+                    </select></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('section')}" th:errors="*{section}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{artist}" scope="row"></th>
+                    <td><input type="text" name="artist" th:field="*{artist}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('artist')}" th:errors="*{artist}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{song}" scope="row"></th>
+                    <td><input type="text" name="song" th:field="*{song}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('song')}" th:errors="*{song}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{artistCountry}" scope="row"></th>
+                    <td><input type="text" name="artistcountry" th:field="*{artistCountry}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('artistCountry')}" th:errors="*{artistCountry}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{runningOrder}" scope="row"></th>
+                    <td><input type="text" name="runningorder" th:field="*{runningOrder}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('runningOrder')}" th:errors="*{runningOrder}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{totalPoints}" scope="row"></th>
+                    <td><input type="number" name="totalpoints" th:field="*{totalPoints}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('totalPoints')}" th:errors="*{totalPoints}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{rank}" scope="row"></th>
+                    <td><input type="text" name="rank" th:field="*{rank}" class="form-control"></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('rank')}" th:errors="*{rank}" /></td>
+                </tr>
+                <tr>
+                    <th th:text="#{qualified}" scope="row"></th>
+                    <td><select name="qualified" th:field="*{qualified}" class="form-control">
+                        <option value="TRUE" th:text="#{true}" th:if="${qualified}=='TRUE' ? selected : ''"></option>
+                        <option value="FALSE" th:text="#{false}" th:if="${qualified}=='FALSE' ? selected : ''"></option>
+                    </select></td>
+                    <td style="color:red"><span th:if="${#fields.hasErrors('qualified')}" th:errors="*{qualified}" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" th:value="#{submit}" class="btn btn-outline-info"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
