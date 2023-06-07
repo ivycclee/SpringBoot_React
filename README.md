@@ -1,2 +1,2 @@
-This was a college assignment that used Spring Boot to expose a REST API.  
-The frontend used for the purposes of completing the assignment is Thymeleaf. This is now being updated in order to learn React.  
+This was a college assignment that used Spring Boot -- the purpose of the project was for internationalisation.  
+Thymeleaf was used as the frontend technology, however this project will be used in order to learn React.  
