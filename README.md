@@ -1,8 +1,3 @@
-# assignment-two-2023-szechuansizzle
-
-## note on part 3 functionality - send recommendations by email
-- this was done using mailtrap in their testing facility (sandboxed environment from what I could gather)
-- if you would like to log into it to see the actual email being sent/received, username is k00252664@student.lit.ie with password set to Assignment2
-- when logged in, navigate to Email Testing > Inboxes > AppDevAssignment2
-
-![image](https://user-images.githubusercontent.com/57398736/227780990-08bebbb7-9f0d-42a7-9cf9-a488680b3b96.png)
+This was a college assignment that used Spring Boot to expose a REST API.  
+The frontend used for the purposes of completing the assignment is Thymeleaf. This is now being updated in order to learn React.  
+A simple client was written in Python in order to consume some API calls.
