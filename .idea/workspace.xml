@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3706ed23-5613-4a5e-91f5-719445e106ad" name="Changes" comment="React proj initialisation (added wrong files previously)">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3706ed23-5613-4a5e-91f5-719445e106ad" name="Changes" comment="First steps -- created header file which contains nav bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-frontend/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-frontend/src/components/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -103,7 +100,7 @@
       <workItem from="1686136789744" duration="824000" />
       <workItem from="1686137722847" duration="1284000" />
       <workItem from="1686139033754" duration="93000" />
-      <workItem from="1686139139805" duration="6645000" />
+      <workItem from="1686139139805" duration="9567000" />
     </task>
     <task id="LOCAL-00001" summary="React proj initialisation">
       <created>1686137092073</created>
@@ -126,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686140537667</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First steps -- created header file which contains nav bar">
+      <created>1686145899369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686145899369</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +153,7 @@
     </ignored-roots>
     <MESSAGE value="React proj initialisation" />
     <MESSAGE value="React proj initialisation (added wrong files previously)" />
-    <option name="LAST_COMMIT_MESSAGE" value="React proj initialisation (added wrong files previously)" />
+    <MESSAGE value="First steps -- created header file which contains nav bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="First steps -- created header file which contains nav bar" />
   </component>
 </project>

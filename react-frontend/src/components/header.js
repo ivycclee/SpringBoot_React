@@ -1,26 +1,13 @@
-import React from 'react';
-import './header.css';
+import React, {Component} from 'react';
+import '../styles/header.css';
+import {Link} from 'react-router-dom';
+import {Navbar, NavbarBrand} from 'reactstrap';
 
 
-function Navigation() {
-    return (
-    <div>
-        <header>
-            <nav className="navbar navbar-expand-md navbar-light">
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
-    );
+export default class Navigation extends Component {
+    render() {
+        return <Navbar className="navbar navbar-expand-md navbar-light">
+            <NavbarBrand tag={Link} to="/" className="nav-link">Home</NavbarBrand>
+        </Navbar>;
+    }
 }
-export default Navigation;
