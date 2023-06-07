@@ -1,21 +1,18 @@
-import {Component} from "react";
+import React, {Component} from "react";
+import Home from "./components/home";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 class App extends Component {
-  state = {
-    clients: []
-  };
-
-  async componentDidMount() {
-    const resp = await fetch("http://localhost:8080/petopia/all");
-    const body = await resp.json();
-    this.setState({clients: body});
+    render() {
+    return (
+        <Router>
+            <Switch>
+                <Route path="/" exact={true} component={Home}/>
+            </Switch>
+        </Router>
+    )
   }
-
-  render() {
-    const {clients} = this.state;
-
-  }
-
-}//end class
+}
 
 export default App;
