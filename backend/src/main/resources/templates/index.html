@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html th:attr="locale=${en_IE}">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{search}"></title>
+    <th:block th:insert="fragments.html :: includes"></th:block>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif; color: #464655;">
+<header th:replace="fragments.html :: header" />
+
+<div class="container">
+    <div class="border border-warning p-5">
+        <h1 th:text="#{search}" class="text-center pb-2"></h1>
+
+        <form th:action="@{/search}" method="post" class="w-75 d-block mx-auto">
+            <div class="table-responsive">
+                <table class="mx-auto">
+                    <tr>
+                        <td class="w-50"><label th:text="#{startdate}"></label></td>
+                        <td><input type="date" required name="startdate" id="start" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label th:text="#{enddate}"></label></td>
+                        <td><input type="date" required name="enddate" id="end" class="form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="color:red" class="text-center" colspan="2"><span th:if="${start_end_date} != null" th:text="#{start_end_date}"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label th:text="#{country}"></label></td>
+                        <td><input type="text" name="country" class="form-control" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="reset" th:value="#{clear}" class="btn btn-outline-info"></td>
+                        <td><input type="submit" th:value="#{submit}" class="btn btn-outline-info"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+<hr><hr><hr>
+    <div class="border border-warning p-5">
+        <h1 th:text="#{secondarysearch}" class="text-center pb-2"></h1>
+
+        <form th:action="@{/othersearch}" method="post" class="w-75 d-block mx-auto">
+            <div class="table-responsive">
+                <table class="mx-auto">
+                    <tr>
+                        <td class="w-50"><label th:text="#{year}"></label></td>
+                        <td><select name="year" required class="form-control">
+                            <option th:each="y: ${allyears}" th:text="${y}" th:value="${y}"></option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label th:text="#{section}"></label></td>
+                        <td><select name="section" required class="form-control">
+                            <option th:each="s: ${allsections}" th:text="${s}" th:value="${s}"></option>
+                        </select></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><input type="reset" th:value="#{clear}" class="btn btn-outline-info"></td>
+                        <td><input type="submit" th:value="#{submit}" class="btn btn-outline-info"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

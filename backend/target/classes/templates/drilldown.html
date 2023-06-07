@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{details}"></title>
+    <th:block th:insert="fragments.html :: includes"></th:block>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif; color: #464655;">
+<header th:replace="fragments.html :: header" />
+
+<div class="container">
+    <p style="text-align: center"><button class="btn btn-outline-info" onclick="history.back()" th:text="#{goback}"></button></p>
+    <img th:src="@{/assets/images/{file}(file=${entrant.getLogo()})}" class="mx-auto d-block">
+    <div class="table-responsive">
+    <table class="table table-hover w-75 mx-auto">
+        <tr>
+            <th th:text="#{rank}" scope="row" class="w-50 text-right"></th>
+            <td th:text="${entrant.getRank()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{qualified}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getQualified()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{runningOrder}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getRunningOrder()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{section}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getSection()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{totalPoints}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getTotalPoints()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{artist}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getArtist()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{artistCountry}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getArtistCountry()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{artistCountry}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getArtistCountry()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{hostCity}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getHostCity()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{hostCountry}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getHostCountry()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{dateOfFinal}" scope="row" class="text-right"></th>
+            <td th:text="${entrant.getDateOfFinal()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{venueName}" scope="row" class="text-right"></th>
+            <td th:text="${venue.getName()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{capacity}" scope="row" class="text-right"></th>
+            <td th:text="${venue.getCapacity()}"></td>
+        </tr>
+        <tr>
+            <th th:text="#{note}" scope="row" class="text-right"></th>
+            <td th:text="${venue.getNote()}"></td>
+        </tr>
+    </table>
+        <p class="text-center"><a th:href="@{/edit/{id}(id=${id})}"><button class="btn btn-outline-info" th:text="#{edit}"></button></a></p>
+    </div>
+</div>
+</body>
+</html>
